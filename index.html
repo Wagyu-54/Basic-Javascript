@@ -61,3 +61,57 @@
     <button onclick="addMultiplesToArray()">
         Array of Reverse Order Multiples of 5
     </button>
+ <hr>
+
+    <h2>2pts: Objects and Form Fields</h2>
+
+    <label for="carType">Car Type</label>
+    <input id="carType" type="text"><br>
+
+    <label for="carMPG">Car MPG</label>
+    <input id="carMPG" type="text"><br>
+
+    <label for="carColor">Car Color</label>
+    <input id="carColor" type="text"><br><br>
+
+    <button type="button" onclick="printCarObject()">
+        Print Car Object
+    </button>
+
+    <hr>
+
+    <h2>2pts: Objects and Form Fields pt. 2</h2>
+    <p>
+        When either of these buttons are clicked,<br>
+        load the data from the car objects found in the footer of this HTML<br>
+        into the form above.
+    </p>
+
+    <button type="button" onclick="loadCar(1)">Load Car 1</button>
+    <button type="button" onclick="loadCar(2)">Load Car 2</button>
+    <button type="button" onclick="loadCar(3)">Load Car 3</button>
+
+    <hr>
+
+    <h2>2pt: Changing Styles</h2>
+
+    <p id="styleParagraph">
+        When either of these buttons are clicked,<br>
+        the text color of this paragraph (and only this paragraph) should change<br>
+        to the color described by the button text.
+    </p>
+
+    <button type="button" onclick="changeColor(1)">Red</button>
+    <button type="button" onclick="changeColor(2)">Green</button>
+    <button type="button" onclick="changeColor(3)">Blue</button>
+
+    <footer>
+        <script>
+            let carObject1 = { cType: "sedan", cMPG: "32", cColor: "blue" };
+            let carObject2 = { cType: "truck", cMPG: "28", cColor: "red" };
+            let carObject3 = { cType: "van", cMPG: "30", cColor: "green" };
+        </script>
+    </footer>
+
+</body>
+</html>
