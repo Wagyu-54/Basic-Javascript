@@ -61,3 +61,57 @@ function addMultiplesToArray() {
     // Print array to console
     console.log(arr);
 }
+/* Objects and Form Fields */
+
+function printCarObject() {
+
+    let type = document.getElementById("carType").value;
+    let mpg = document.getElementById("carMPG").value;
+    let color = document.getElementById("carColor").value;
+
+    let car = {
+        cType: type,
+        cMPG: mpg,
+        cColor: color
+    };
+
+    console.log(car);
+}
+
+/*  Load Car Objects */
+
+function loadCar(num) {
+
+    let car;
+
+    if (num === 1) {
+        car = carObject1;
+    }
+    else if (num === 2) {
+        car = carObject2;
+    }
+    else if (num === 3) {
+        car = carObject3;
+    }
+
+    document.getElementById("carType").value = car.cType;
+    document.getElementById("carMPG").value = car.cMPG;
+    document.getElementById("carColor").value = car.cColor;
+}
+
+/* Changing Styles */
+
+function changeColor(choice) {
+
+    let paragraph = document.getElementById("styleParagraph");
+
+    if (choice === 1) {
+        paragraph.style.color = "red";
+    }
+    else if (choice === 2) {
+        paragraph.style.color = "green";
+    }
+    else if (choice === 3) {
+        paragraph.style.color = "blue";
+    }
+}
